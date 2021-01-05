@@ -1,0 +1,26 @@
+#movies img, #movie img{
+  width:100%;
+}
+.bottom-container {
+  text-align: center;
+}
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+a:hover {
+  color: #EAF6F6;
+}
+
+
+
+@media(min-width:960px){
+  #movies .col-md-3 .well{
+    height: 390px;
+  }
+
+  #movies .col-md-3 img{
+    height:240px;
+  }
+}
