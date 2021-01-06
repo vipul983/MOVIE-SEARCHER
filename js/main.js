@@ -1,4 +1,5 @@
 $(document).ready(() => {
+  getMovies('america');
   $('#searchForm').on('submit', (e) => {
     let searchText = $('#searchText').val();
     getMovies(searchText);
@@ -38,6 +39,7 @@ function movieSelected(id){
 }
 
 function getMovie(){
+  
   let movieId = sessionStorage.getItem('movieId');
 
   axios.get('https://www.omdbapi.com/?i=tt3896198&apikey=ae13ac6a&'+movieId)
